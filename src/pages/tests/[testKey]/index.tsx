@@ -19,7 +19,7 @@ export default ({meta, testId}: OwnProps) => {
       <h1 className={s.center}>{meta.title}</h1>
       <TestCard 
             key={testId}
-            url={`/nextjs-study/tests/${testId}/test`}
+            url={`/tests/${testId}/test`}
             title={'이 테스트는?'}
             image={meta.image}
             description={meta.description}

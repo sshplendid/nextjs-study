@@ -1,4 +1,5 @@
 import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button } from "@material-ui/core"
+import Link from 'next/link'
 
 import s  from './testCard.module.css'
 
@@ -28,13 +29,16 @@ export default ({title, description, type, imageUrl, retryUrl, anotherUrl}) => {
         <Button size="small" color="primary">
           공유하기
         </Button>
+        <Link href={retryUrl} passHref>
         <Button href={retryUrl} size="small" color="primary">
           다시하기
         </Button>
+        </Link>
+        <Link href={anotherUrl} passHref>
         <Button href={anotherUrl} size="small" color="primary">
           다른 테스트 보기
         </Button>
-
+        </Link>
       </CardActions>
     </Card>
   )

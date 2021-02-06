@@ -15,8 +15,8 @@ export default ({testKey, title, type, description}: OwnProps) => {
       <CharacterCard 
       {...{type, description, title}}
       imageUrl={`/nextjs-study/images/${testKey}/${type.toUpperCase()}.jpg`}
-      retryUrl={`/nextjs-study/tests/${testKey}`}
-      anotherUrl='/nextjs-study'
+      retryUrl={`/tests/${testKey}`}
+      anotherUrl='/'
       />
     </div>
   )

@@ -16,7 +16,7 @@ export default ({list}: OwnProps) => {
       {list.map(({meta, key}) => (
         <TestCard 
             key={key}
-            url={`/nextjs-study/tests/${key}`}
+            url={`/tests/${key}`}
             title={meta.title}
             image={meta.image}
             description={meta.description}

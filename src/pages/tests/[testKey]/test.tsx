@@ -55,9 +55,10 @@ export default ({testId, testTitle, questions}: OwnProps) => {
         ): (
           <div>
             <TestCard title="결과 보러가기"
+                    image="https://www.iwu.edu/center-engaged-learning/titan-central/ask/questions-graphic.png"
                     description="나와 어울리는 동물은??"
-                    url={`/nextjs-study/tests/${testId}/characters/${resolveMbti(ei,sn,tf,jp)}`}
-            />
+                    url={`/tests/${testId}/characters/${resolveMbti(ei,sn,tf,jp)}`}
+                    />
           </div>
         )
       }
