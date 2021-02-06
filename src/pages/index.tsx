@@ -1,5 +1,5 @@
-import Link from "next/link"
 import TestCard from "../components/TestCard"
+import Head from 'next/head'
 import scenarios from '../scenarios'
 import { Meta } from "../types/mbti"
 import s from './index.module.css'
@@ -11,8 +11,11 @@ interface OwnProps  {
 export default ({list}: OwnProps) => {
   return (
     <div>
+      <Head>
+        <title>성격테스트 리스트</title>
+      </Head>
       <h1 className={s.center}>테스트 리스트</h1>
-      <ul>
+      <div>
       {list.map(({meta, key}) => (
         <TestCard 
             key={key}
@@ -22,7 +25,7 @@ export default ({list}: OwnProps) => {
             description={meta.description}
         />
       ))}
-      </ul>
+      </div>
     </div>
   )
 }

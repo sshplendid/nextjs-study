@@ -1,4 +1,4 @@
-import  Link  from  'next/link'
+import Head  from 'next/head'
 import CharacterCard from '../../../../components/CharacterCard'
 import scenarios  from '../../../../scenarios'
 
@@ -12,6 +12,9 @@ interface OwnProps {
 export default ({testKey, title, type, description}: OwnProps) => {
   return (
     <div>
+      <Head>
+        <title>{title}로 보는 당신 유형은?</title>
+      </Head>
       <CharacterCard 
       {...{type, description, title}}
       imageUrl={`/nextjs-study/images/${testKey}/${type.toUpperCase()}.jpg`}
