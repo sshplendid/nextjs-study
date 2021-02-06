@@ -1,0 +1,11 @@
+.card {
+  margin-bottom: 50px;
+}
+.cardImage {
+  max-height: 150px;
+  min-height: 100px;
+}
+
+.characterImage {
+  min-height: 300px;
+}

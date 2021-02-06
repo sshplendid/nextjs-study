@@ -1,0 +1,7 @@
+.answer > * {
+  width: 100%;
+  height: 100px;
+}
+.answer {
+  margin-bottom: 3vh;
+}
